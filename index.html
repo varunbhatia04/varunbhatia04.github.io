@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhatia Tax Accountant | Professional Tax & Accounting Services</title>
+    <meta name="description" content="Expert tax filing, GST services, and bookkeeping solutions. Trusted by hundreds of clients for accurate and timely tax services.">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fas fa-calculator"></i>
+                <span>Bhatia Tax Services</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="upload.html" class="nav-btn">Client Portal</a></li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Expert Tax & Accounting Solutions</h1>
+                <p>Trusted by hundreds of individuals for accurate tax filing, tax refunds, and professional financial services.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get Free Consultation</a>
+                    <a href="#services" class="btn btn-secondary">Our Services</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">30+</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>100% Secure</h3>
+                    <p>Your data is protected</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive tax and accounting solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                    </div>
+                    <h3>Tax Filing (ITR)</h3>
+                    <p>Expert income tax return filing for individuals, salaried employees, freelancers, and businesses. We ensure maximum deductions and timely submissions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Individual ITR Filing</li>
+                        <li><i class="fas fa-check"></i> Business Tax Returns</li>
+                        <li><i class="fas fa-check"></i> Tax Planning & Optimization</li>
+                        <li><i class="fas fa-check"></i> Audit Support</li>
+                    </ul>
+                    <a href="#pricing" class="btn btn-outline">View Pricing</a>
+                </div>
+                <div class="service-card featured">
+                    <div class="featured-badge">Most Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <h3>Tax Refund Services</h3>
+                    <p>Maximize your tax refund with our expert analysis. We identify all eligible deductions and credits to ensure you get the maximum refund possible.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Refund Maximization</li>
+                        <li><i class="fas fa-check"></i> Deduction Analysis</li>
+                        <li><i class="fas fa-check"></i> Credit Identification</li>
+                        <li><i class="fas fa-check"></i> Fast Processing</li>
+                    </ul>
+                    <a href="#pricing" class="btn btn-primary">View Pricing</a>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <h3>Financial Services</h3>
+                    <p>Comprehensive financial document handling including Excel spreadsheets, financial reports, data entry, and document organization.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Excel Sheet Management</li>
+                        <li><i class="fas fa-check"></i> Financial Data Entry</li>
+                        <li><i class="fas fa-check"></i> Document Organization</li>
+                        <li><i class="fas fa-check"></i> Report Preparation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Varun Bhatia</h2>
+                    <p class="lead">A Certified Tax Professional (EFIN: 308942) experience in tax planning, accounting and serving in US Army.</p>
+                    <p>I founded this practice with a simple mission: to provide personalized, accurate, and affordable tax services to individuals and small businesses. With a deep understanding of tax laws and a commitment to staying updated with the latest regulations, I ensure my clients always receive the best possible advice and service.</p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-user-graduate"></i>
+                            <div>
+                                <h4>Certified Professional</h4>
+                                <p>Licensed CPA with continuous education</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-handshake"></i>
+                            <div>
+                                <h4>Personalized Service</h4>
+                                <p>One-on-one attention for every client</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Quick Turnaround</h4>
+                                <p>Fast and efficient processing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="about-card">
+                        <div class="about-avatar">
+                            <img src="images/varun.png" alt="Varun Bhatia - Tax Accountant">
+                        </div>
+                        <h3>Varun</h3>
+                        <p>Certified Tax Accountant</p>
+                        <div class="about-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="mailto:varunbhatia2004@gmail.com"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
+        <div class="container">
+            <div class="section-header">
+                <h2>Transparent Pricing</h2>
+                <p>Affordable packages designed for individuals</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Individual</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">75</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Single ITR Filing</li>
+                        <li><i class="fas fa-check"></i> W-2 Income</li>
+                        <li><i class="fas fa-check"></i> Standard Deductions</li>
+                        <li><i class="fas fa-check"></i> E-Filing</li>
+                        <li><i class="fas fa-check"></i> Email Support</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Investment Income</li>
+                        <li class="disabled"><i class="fas fa-times"></i> Business Income</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline btn-block">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Best Value</div>
+                    <div class="pricing-header">
+                        <h3>Professional</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">125</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Complex ITR Filing</li>
+                        <li><i class="fas fa-check"></i> Multiple Income Sources</li>
+                        <li><i class="fas fa-check"></i> Itemized Deductions</li>
+                        <li><i class="fas fa-check"></i> Investment Income</li>
+                        <li><i class="fas fa-check"></i> Rental Income</li>
+                        <li><i class="fas fa-check"></i> Priority Support</li>
+                        <li><i class="fas fa-check"></i> Tax Planning Consultation</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-block">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Section -->
+    <section class="payment" id="payment">
+        <div class="container">
+            <div class="section-header">
+                <h2>Easy Payment Options</h2>
+                <p>Secure and convenient payment methods for your convenience</p>
+            </div>
+            <div class="payment-content">
+                <div class="payment-card">
+                    <div class="payment-icon">
+                        <i class="fas fa-money-check-alt"></i>
+                    </div>
+                    <h3>Pay via Zelle or Cash</h3>
+                    <p>Quick and secure payments directly from your bank</p>
+                    <div class="zelle-info">
+                        <div class="zelle-detail">
+                            <span class="label">Zelle:</span>
+                            <span class="value" id="zelleEmail">varunbhatia2004@gmail.com</span>
+                            <button class="copy-btn" onclick="copyToClipboard('varunbhatia2004@gmail.com')">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="payment-steps">
+                        <h4>How to Pay:</h4>
+                        <ol>
+                            <li>Open your banking app</li>
+                            <li>Navigate to "Send Money with Zelle"</li>
+                            <li>Enter the email address above</li>
+                            <li>Enter the amount and send</li>
+                            <li>Take a screenshot for your records</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="payment-info">
+                    <h3>Confirm Your Payment</h3>
+                    <p style="margin-bottom: 1rem; color: #64748b;">After making your Zelle payment, fill out this form to receive your receipt.</p>
+                    <form class="payment-form" id="paymentForm">
+                        <div class="form-group">
+                            <label for="payerName">Full Name *</label>
+                            <input type="text" id="payerName" name="payerName" required placeholder="Your full name">
+                        </div>
+                        <div class="form-group">
+                            <label for="payerEmail">Email Address *</label>
+                            <input type="email" id="payerEmail" name="payerEmail" required placeholder="your@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="serviceSelected">Service Paid For *</label>
+                            <select id="serviceSelected" name="serviceSelected" required>
+                                <option value="">Select service</option>
+                                <option value="Individual - $75">Individual Tax Filing - $75</option>
+                                <option value="Professional - $99">Professional Tax Filing - $99</option>
+                                <option value="Tax Refund">Tax Refund Services</option>
+                                <option value="Financial Services">Financial Services (Excel, etc.)</option>
+                                <option value="Other">Other Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentAmount">Amount Paid ($) *</label>
+                            <input type="number" id="paymentAmount" name="paymentAmount" required placeholder="0.00" min="1" step="0.01">
+                        </div>
+                        <div class="form-group">
+                            <label for="paymentNotes">Additional Notes</label>
+                            <textarea id="paymentNotes" name="paymentNotes" rows="2" placeholder="Any additional information..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-receipt"></i> Get Receipt
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Clients Say</h2>
+                <p>Trusted by hundreds of satisfied clients</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Varun has been handling my taxes for 3 years now. His attention to detail and knowledge of tax laws has saved me thousands. Highly recommended!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Navjyot Singh</h4>
+                            <p>Small Business Owner</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Professional, responsive, and incredibly knowledgeable. Varun made the complex process of GST registration and compliance so simple for our startup."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Samay Kumar</h4>
+                            <p>Tech Startup Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"As a freelancer, my taxes were always complicated. Varun simplified everything and helped me understand my deductions. Best decision I ever made!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Lorenzo Chen</h4>
+                            <p>Freelance Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to get started? Contact us for a free consultation</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(714) 872-6910</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>varunbhatia2004@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Office</h4>
+                            <p>8149 Santa Inez Way<br>Buena Park, CA 92831</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Mon - Fri: 9AM - 6PM<br>Sat: 10AM - 2PM</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a service</option>
+                                <option value="tax-filing">Tax Filing (ITR)</option>
+                                <option value="tax-refund">Tax Refund Services</option>
+                                <option value="financial-services">Financial Services (Excel, etc.)</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell us about your tax needs..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        <i class="fas fa-paper-plane"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <i class="fas fa-calculator"></i>
+                        <span>Bhatia Tax Services</span>
+                    </a>
+                    <p>Professional tax and accounting services for individuals and businesses. Your trusted partner for financial success.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Tax Filing</a></li>
+                        <li><a href="#services">Tax Refund</a></li>
+                        <li><a href="#services">Financial Services</a></li>
+                        <li><a href="upload.html">Document Upload</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Varun Bhatia Accountant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

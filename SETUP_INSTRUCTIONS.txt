@@ -1,0 +1,195 @@
+================================================================================
+BHATIA TAX SERVICES - WEBSITE SETUP INSTRUCTIONS
+================================================================================
+
+This file contains instructions to:
+1. Set up EmailJS for sending real emails
+2. Deploy your website to Netlify
+
+================================================================================
+PART 1: SET UP EMAILJS (Required for email functionality)
+================================================================================
+
+EmailJS allows your website to send emails directly from JavaScript.
+Free tier: 200 emails/month (sufficient for most small businesses)
+
+STEP 1: Create EmailJS Account
+------------------------------
+1. Go to https://www.emailjs.com/
+2. Click "Sign Up Free"
+3. Create an account with your email
+
+STEP 2: Add Email Service
+-------------------------
+1. After logging in, go to "Email Services" in the sidebar
+2. Click "Add New Service"
+3. Select "Gmail" (recommended)
+4. Click "Connect Account" and authorize with varunbhatia2004@gmail.com
+5. Click "Create Service"
+6. NOTE DOWN your Service ID (looks like: service_xxxxxxx)
+
+STEP 3: Create Contact Form Template
+------------------------------------
+1. Go to "Email Templates" in the sidebar
+2. Click "Create New Template"
+3. Set Template Name: "contact_form"
+4. In the template editor, paste this:
+
+   Subject: New Inquiry from {{from_name}} - {{service}}
+
+   Content:
+   ------------------------------------------
+   NEW CONTACT FORM SUBMISSION
+   ------------------------------------------
+
+   From: {{from_name}}
+   Email: {{from_email}}
+   Phone: {{phone}}
+
+   Service Interested In: {{service_name}}
+   Price: {{service_price}}
+   Features: {{service_features}}
+
+   Message:
+   {{message}}
+
+   ------------------------------------------
+   Received on: {{date}}
+
+5. In Settings tab, set:
+   - To Email: varunbhatia2004@gmail.com
+   - From Name: Bhatia Tax Website
+   - Reply To: {{from_email}}
+6. Click "Save"
+7. NOTE DOWN the Template ID (looks like: template_xxxxxxx)
+
+STEP 4: Create Receipt Template
+-------------------------------
+1. Click "Create New Template" again
+2. Set Template Name: "payment_receipt"
+3. Paste this:
+
+   Subject: Payment Receipt #{{receipt_number}} - Bhatia Tax Services
+
+   Content:
+   ==========================================
+   PAYMENT RECEIPT
+   ==========================================
+   Receipt Number: {{receipt_number}}
+   Date: {{payment_date}}
+
+   BILL TO:
+   {{to_name}}
+   {{to_email}}
+
+   ------------------------------------------
+   SERVICE: {{service_name}}
+   AMOUNT PAID: ${{amount}}
+   PAYMENT METHOD: {{payment_method}}
+   ------------------------------------------
+
+   Features Included:
+   {{service_features}}
+
+   Notes: {{notes}}
+
+   ==========================================
+   Thank you for your business!
+
+   Bhatia Tax Services
+   Email: {{business_email}}
+   Phone: {{business_phone}}
+   Address: {{business_address}}
+   ==========================================
+
+4. In Settings tab, set:
+   - To Email: {{to_email}}
+   - From Name: Bhatia Tax Services
+5. Click "Save"
+6. NOTE DOWN the Template ID
+
+STEP 5: Get Your Public Key
+---------------------------
+1. Go to "Account" in the sidebar
+2. Find "Public Key" under API Keys section
+3. NOTE DOWN your Public Key
+
+STEP 6: Update Your Website Code
+--------------------------------
+1. Open the file: js/main.js
+2. At the top, replace these placeholder values with your actual values:
+
+   const EMAILJS_PUBLIC_KEY = 'YOUR_PUBLIC_KEY';      // Replace with your Public Key
+   const EMAILJS_SERVICE_ID = 'YOUR_SERVICE_ID';      // Replace with your Service ID
+   const EMAILJS_CONTACT_TEMPLATE = 'YOUR_CONTACT_TEMPLATE_ID';  // Replace with contact template ID
+   const EMAILJS_RECEIPT_TEMPLATE = 'YOUR_RECEIPT_TEMPLATE_ID';  // Replace with receipt template ID
+
+
+================================================================================
+PART 2: DEPLOY TO NETLIFY (Free Public Hosting)
+================================================================================
+
+STEP 1: Go to Netlify
+---------------------
+1. Open https://app.netlify.com/drop in your browser
+
+STEP 2: Deploy Your Site
+------------------------
+1. Open Finder and navigate to: /Users/navjyotsinghmultani/varun-tax-accountant
+2. Drag the ENTIRE folder onto the Netlify page where it says "Drag and drop your site"
+3. Wait for the upload to complete (usually 30 seconds)
+
+STEP 3: Get Your Live URL
+-------------------------
+1. After upload, Netlify will give you a URL like: https://random-name-12345.netlify.app
+2. This is your LIVE website! Share this URL with anyone.
+
+STEP 4: (Optional) Custom Domain
+--------------------------------
+1. If you have a custom domain (e.g., bhatiataxtservices.com):
+   - Click "Domain settings" on Netlify
+   - Click "Add custom domain"
+   - Follow the instructions to point your domain to Netlify
+
+
+================================================================================
+TESTING YOUR WEBSITE
+================================================================================
+
+After completing both parts:
+
+1. Test Contact Form:
+   - Fill out the contact form on your website
+   - Check varunbhatia2004@gmail.com for the email
+   - Should receive email with all the details
+
+2. Test Payment Receipt:
+   - Go to the Payment section
+   - Fill in the payment confirmation form
+   - Check the customer email for the receipt
+   - Check varunbhatia2004@gmail.com for the notification
+
+
+================================================================================
+TROUBLESHOOTING
+================================================================================
+
+If emails aren't sending:
+1. Check browser console (F12 > Console) for errors
+2. Verify EmailJS credentials are correct
+3. Make sure you've verified your email in EmailJS
+4. Check EmailJS dashboard for any error logs
+
+If website isn't loading:
+1. Clear browser cache
+2. Check Netlify deploy logs for errors
+
+
+================================================================================
+SUPPORT
+================================================================================
+
+EmailJS Support: https://www.emailjs.com/docs/
+Netlify Support: https://docs.netlify.com/
+
+================================================================================
